@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Islam Mohamed | AI Engineer & Data Scientist Portfolio</title>
+  <meta name="title" content="Islam Mohamed | AI Engineer & Data Scientist Portfolio">
+  <meta name="description" content="Portfolio of Islam Mohamed - AI Engineer & Data Scientist specializing in Deep Learning, Machine Learning, NLP, Computer Vision, and production-ready intelligent systems.">
+  <meta name="keywords" content="Islam Mohamed, AI Engineer, Data Scientist, Machine Learning, Deep Learning, PyTorch, TensorFlow, Streamlit, Python, NLP, Computer Vision">
+  <meta name="author" content="Islam Mohamed">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/islam0114">
+  <meta property="og:title" content="Islam Mohamed | AI Engineer & Data Scientist Portfolio">
+  <meta property="og:description" content="AI Engineer & Data Scientist building scalable deep learning and predictive intelligence solutions.">
+  
+  <!-- Google Fonts: Outfit & Inter & Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Remix Icon CDN for modern icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Background Glowing Ambient Orbs -->
+  <div class="bg-glow-orb bg-glow-1"></div>
+  <div class="bg-glow-orb bg-glow-2"></div>
+
+  <!-- Interactive Neural Particle Canvas -->
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- ========================================================================
+       1. FLOATING NAVIGATION BAR
+       ======================================================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo">
+        <div class="logo-badge">IM</div>
+        <span>Islam<span class="gradient-text">.ai</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#playground" class="nav-link">AI Playground</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <i class="ri-sun-line"></i>
+        </button>
+        <a href="https://drive.google.com/file/d/1Du3rAKoVmyppXj9nJUisE3xe9Fi5dpzV/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn-nav-cta">
+          <i class="ri-download-2-line"></i> Resume
+        </a>
+        <button class="mobile-toggle-btn" id="mobile-toggle-btn" aria-label="Open Navigation Menu">
+          <i class="ri-menu-line"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <a href="#about" class="mobile-drawer-link">About</a>
+    <a href="#playground" class="mobile-drawer-link">AI Playground</a>
+    <a href="#projects" class="mobile-drawer-link">Projects</a>
+    <a href="#skills" class="mobile-drawer-link">Skills</a>
+    <a href="#certifications" class="mobile-drawer-link">Certifications</a>
+    <a href="#contact" class="mobile-drawer-link">Contact</a>
+    <a href="https://drive.google.com/file/d/1Du3rAKoVmyppXj9nJUisE3xe9Fi5dpzV/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn-primary" style="margin-top: 1rem; width: 100%; justify-content: center;">
+      <i class="ri-download-2-line"></i> Download Resume
+    </a>
+  </div>
+
+  <!-- ========================================================================
+       2. HERO SECTION
+       ======================================================================== -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      
+      <!-- Left Hero Intro -->
+      <div class="hero-content">
+        <div class="hero-status-tag">
+          <span class="pulse-dot"></span>
+          <span>Available for AI Engineering Roles</span>
+        </div>
+
+        <h1 class="hero-name">
+          Hi, I'm <span class="gradient-text">Islam Mohamed</span>
+        </h1>
+
+        <div class="hero-roles">
+          <span>Specializing in</span>
+          <span class="gradient-text-purple code-font" id="typing-role">AI Engineer</span>
+          <span class="typing-cursor"></span>
+        </div>
+
+        <p class="hero-bio">
+          Passionate <strong>AI Engineer & Data Scientist</strong> with a rigorous computer science background. I build end-to-end intelligent systems, deep neural architectures (CNNs, RNNs, Transformers), predictive machine learning pipelines, and deploy real-time AI solutions that solve high-impact real-world problems.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">
+            <i class="ri-code-s-slash-line"></i> Explore Projects
+          </a>
+          <a href="#playground" class="btn-secondary">
+            <i class="ri-cpu-line"></i> Try Live AI Demo
+          </a>
+          <a href="#contact" class="btn-outline">
+            <i class="ri-chat-3-line"></i> Get in Touch
+          </a>
+        </div>
+
+        <!-- Social Quick Links -->
+        <div class="hero-socials">
+          <a href="https://github.com/islam0114" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile">
+            <i class="ri-github-fill"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/islam01144" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile">
+            <i class="ri-linkedin-fill"></i>
+          </a>
+          <a href="https://wa.me/201144682583" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="WhatsApp Direct Chat">
+            <i class="ri-whatsapp-line"></i>
+          </a>
+          <a href="#" class="social-icon-btn btn-copy-email" title="Copy Email (10islammohamed01@gmail.com)">
+            <i class="ri-mail-send-line"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right AI Neural Card Mockup -->
+      <div class="hero-visual-card">
+        <div class="ai-card-header">
+          <div class="terminal-dots">
+            <span class="dot-red"></span>
+            <span class="dot-yellow"></span>
+            <span class="dot-green"></span>
+          </div>
+          <div class="ai-card-badge">
+            <i class="ri-terminal-box-line"></i> model_pipeline.py
+          </div>
+        </div>
+
+        <div class="ai-avatar-wrapper">
+          <div class="ai-avatar-glow">
+            <div class="ai-avatar-fallback">
+              <i class="ri-brain-line"></i>
+            </div>
+          </div>
+          <div class="ai-info-box">
+            <h3>Islam Mohamed</h3>
+            <p>AI Engineer • Data Scientist</p>
+            <span class="code-font" style="font-size: 0.78rem; color: var(--accent-cyan);">@Cairo, Egypt</span>
+          </div>
+        </div>
+
+        <div class="ai-metrics-snippet">
+          <div class="metric-line">
+            <span class="metric-key">> specialization:</span>
+            <span class="metric-val">"Deep Learning & NLP"</span>
+          </div>
+          <div class="metric-line">
+            <span class="metric-key">> frameworks:</span>
+            <span class="metric-val">["PyTorch", "TensorFlow", "Scikit"]</span>
+          </div>
+          <div class="metric-line">
+            <span class="metric-key">> NTI_evaluation_score:</span>
+            <span class="metric-val success">100.0% (Top 20)</span>
+          </div>
+          <div class="metric-line">
+            <span class="metric-key">> IBM_AI_Certified:</span>
+            <span class="metric-val success">True</span>
+          </div>
+          <div class="metric-line">
+            <span class="metric-key">> status:</span>
+            <span class="metric-val success">"Ready for Deployment"</span>
+          </div>
+        </div>
+
+        <div class="floating-badge">
+          <i class="ri-shield-check-fill" style="color: var(--accent-emerald);"></i>
+          <span>Verified AI Credentials</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3. STATS COUNTER TICKER
+       ======================================================================== -->
+  <section class="stats-section">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <div class="stat-number-wrapper">
+          <span class="stat-number gradient-text" data-target="100">0</span>
+          <span class="stat-suffix">%</span>
+        </div>
+        <div class="stat-label">NTI Score (Top 20 Trainees)</div>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-number-wrapper">
+          <span class="stat-number gradient-text" data-target="5">0</span>
+          <span class="stat-suffix">+</span>
+        </div>
+        <div class="stat-label">Industry Certifications</div>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-number-wrapper">
+          <span class="stat-number gradient-text" data-target="4">0</span>
+          <span class="stat-suffix">+</span>
+        </div>
+        <div class="stat-label">Deployed Live AI Apps</div>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-number-wrapper">
+          <span class="stat-number gradient-text" data-target="250">0</span>
+          <span class="stat-suffix">+</span>
+        </div>
+        <div class="stat-label">Hands-on AI Lab Hours</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. ABOUT & CORE ARCHITECTURAL PILLARS
+       ======================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-badge">
+          <i class="ri-user-star-line"></i> About & Architecture
+        </div>
+        <h2 class="section-title">Architecting Intelligent Systems</h2>
+        <p class="section-subtitle">
+          Bridging the gap between mathematical foundations, deep neural models, and scalable business solutions.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left Column: Biography & Story -->
+        <div class="about-text">
+          <p>
+            Hello! I am a dedicated <strong>AI Engineer and Data Scientist</strong> with a strong computational foundation in Computer Science, advanced statistical modeling, and machine learning.
+          </p>
+          <p>
+            My engineering philosophy merges <strong>rigorous mathematical understanding</strong> (probability, linear algebra, numerical optimization) with modern production engineering. I build models that do not just perform in Jupyter Notebooks, but deploy reliably into interactive web applications and enterprise workflows.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-row">
+              <div class="highlight-icon">
+                <i class="ri-award-line"></i>
+              </div>
+              <div class="highlight-content">
+                <h4>Top Tier Academic & Professional Training</h4>
+                <p class="text-muted">Honors graduate of national AI programs including DEPI (MCIT), NTI Machine Learning (Top 20 Trainees), and ITI AI Specialization.</p>
+              </div>
+            </div>
+
+            <div class="highlight-row">
+              <div class="highlight-icon">
+                <i class="ri-rocket-2-line"></i>
+              </div>
+              <div class="highlight-content">
+                <h4>Production-First Mindset</h4>
+                <p class="text-muted">Proven experience designing end-to-end pipelines: data cleaning, feature extraction, hyperparameter optimization, and Streamlit/Cloud deployment.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: 4 Pillars Grid -->
+        <div class="pillars-grid">
+          <!-- Pillar 1 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <i class="ri-brain-line"></i>
+            </div>
+            <h3>Deep Learning & Neural Networks</h3>
+            <p>Designing CNNs, RNNs, and custom neural architectures using PyTorch and TensorFlow for vision and sequential tasks.</p>
+            <div class="pillar-tags">
+              <span class="pillar-tag">PyTorch</span>
+              <span class="pillar-tag">TensorFlow</span>
+              <span class="pillar-tag">CNNs</span>
+            </div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <i class="ri-line-chart-line"></i>
+            </div>
+            <h3>Predictive Machine Learning</h3>
+            <p>Supervised and unsupervised models, ensemble methods, XGBoost, and hyperparameter tuning for maximum accuracy and generalizability.</p>
+            <div class="pillar-tags">
+              <span class="pillar-tag">Scikit-Learn</span>
+              <span class="pillar-tag">XGBoost</span>
+              <span class="pillar-tag">Classification</span>
+            </div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <i class="ri-message-3-line"></i>
+            </div>
+            <h3>NLP & Intelligent Pipelines</h3>
+            <p>Text preprocessing, tokenization, sentiment analysis, embedding models, and Retrieval-Augmented Generation (RAG) paradigms.</p>
+            <div class="pillar-tags">
+              <span class="pillar-tag">NLP</span>
+              <span class="pillar-tag">HuggingFace</span>
+              <span class="pillar-tag">RAG</span>
+            </div>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <i class="ri-dashboard-2-line"></i>
+            </div>
+            <h3>Data Analytics & Storytelling</h3>
+            <p>Transforming complex, high-dimensional datasets into intuitive executive insights with Power BI, Seaborn, and interactive dashboards.</p>
+            <div class="pillar-tags">
+              <span class="pillar-tag">Power BI</span>
+              <span class="pillar-tag">Pandas</span>
+              <span class="pillar-tag">EDA</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. INTERACTIVE IN-BROWSER AI PLAYGROUND (WOW FACTOR)
+       ======================================================================== -->
+  <section class="section ai-playground-section" id="playground">
+    <div class="container">
+
+      <div class="section-header">
+        <div class="section-badge">
+          <i class="ri-flashlight-line"></i> Live AI Playground
+        </div>
+        <h2 class="section-title">Test My AI Model in Real-Time</h2>
+        <p class="section-subtitle">
+          Experience an interactive simulation of my <strong>Customer Retention & Churn AI Engine</strong>. Tweak the operational parameters below to see instantaneous ML scoring and SHAP feature contributions!
+        </p>
+      </div>
+
+      <div class="ai-playground-wrapper">
+        
+        <!-- Top Toolbar -->
+        <div class="playground-top-bar">
+          <div class="playground-title-group">
+            <div class="playground-icon">
+              <i class="ri-cpu-line"></i>
+            </div>
+            <div>
+              <h3 style="font-size: 1.15rem;">Bank Customer Retention AI Simulator</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Real-Time Inference Engine • Logistic & XGBoost weights</p>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <span class="playground-status-badge">
+              <i class="ri-pulse-line"></i> Live Model Active
+            </span>
+          </div>
+        </div>
+
+        <!-- Presets Bar -->
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 2rem; flex-wrap: wrap;">
+          <span style="font-size: 0.85rem; color: var(--text-muted); font-family: var(--font-mono);">Quick Presets:</span>
+          <button class="pill-option active" data-preset="balanced" style="padding: 0.35rem 0.85rem;">Standard Customer</button>
+          <button class="pill-option" data-preset="loyal" style="padding: 0.35rem 0.85rem;">Loyal VIP Client</button>
+          <button class="pill-option" data-preset="at-risk" style="padding: 0.35rem 0.85rem;">High-Risk Attrition Scenario</button>
+        </div>
+
+        <div class="playground-grid">
+          
+          <!-- Controls Column -->
+          <div class="playground-controls">
+            
+            <!-- Control 1: Credit Score -->
+            <div class="control-group">
+              <div class="control-header">
+                <span>Credit Score</span>
+                <span class="control-val-display" id="val-credit-score">650</span>
+              </div>
+              <input type="range" class="slider-input" id="demo-credit-score" min="350" max="850" step="5" value="650">
+            </div>
+
+            <!-- Control 2: Account Balance -->
+            <div class="control-group">
+              <div class="control-header">
+                <span>Account Balance ($)</span>
+                <span class="control-val-display" id="val-balance">$50,000</span>
+              </div>
+              <input type="range" class="slider-input" id="demo-balance" min="0" max="250000" step="2500" value="50000">
+            </div>
+
+            <!-- Control 3: Age -->
+            <div class="control-group">
+              <div class="control-header">
+                <span>Customer Age</span>
+                <span class="control-val-display" id="val-age">38 yrs</span>
+              </div>
+              <input type="range" class="slider-input" id="demo-age" min="18" max="90" step="1" value="38">
+            </div>
+
+            <!-- Control 4: Tenure -->
+            <div class="control-group">
+              <div class="control-header">
+                <span>Tenure with Institution</span>
+                <span class="control-val-display" id="val-tenure">5 yrs</span>
+              </div>
+              <input type="range" class="slider-input" id="demo-tenure" min="0" max="10" step="1" value="5">
+            </div>
+
+            <!-- Control 5: Active Member -->
+            <div class="control-group">
+              <div class="control-header">
+                <span>Active Member Status</span>
+              </div>
+              <div class="pill-select-group" style="grid-template-columns: 1fr 1fr;">
+                <div class="pill-option active" data-active="1">Active Member</div>
+                <div class="pill-option" data-active="0">Inactive Member</div>
+              </div>
+            </div>
+
+            <!-- Control 6: Number of Products -->
+            <div class="control-group">
+              <div class="control-header">
+                <span>Number of Bank Products</span>
+              </div>
+              <div class="pill-select-group" style="grid-template-columns: repeat(4, 1fr);">
+                <div class="pill-option active" data-products="1">1 Product</div>
+                <div class="pill-option" data-products="2">2 Products</div>
+                <div class="pill-option" data-products="3">3 Products</div>
+                <div class="pill-option" data-products="4">4 Products</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Output Visuals Column -->
+          <div class="playground-results">
+            
+            <div class="gauge-wrapper">
+              <div class="circular-gauge-container">
+                <svg class="gauge-svg" viewBox="0 0 160 160">
+                  <circle class="gauge-bg-circle" cx="80" cy="80" r="70"></circle>
+                  <circle class="gauge-progress-circle" id="gauge-progress" cx="80" cy="80" r="70"></circle>
+                </svg>
+                <div class="gauge-inner-content">
+                  <span class="gauge-score-value" id="gauge-score">32%</span>
+                  <span class="gauge-risk-tag risk-low" id="gauge-risk-tag">Low Churn Risk</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- SHAP-inspired Feature Contribution -->
+            <div class="feature-impacts-container">
+              <h4>
+                <span>Feature Impact (SHAP Analysis)</span>
+                <span class="code-font" style="font-size: 0.75rem; color: var(--accent-cyan);">Real-time</span>
+              </h4>
+
+              <!-- Feature 1: Credit -->
+              <div class="feature-impact-row">
+                <div class="feature-info">
+                  <span>Credit Score Stability</span>
+                  <span>Impact Weight</span>
+                </div>
+                <div class="feature-bar-bg">
+                  <div class="feature-bar-fill bar-positive" id="bar-credit" style="width: 45%;"></div>
+                </div>
+              </div>
+
+              <!-- Feature 2: Active status -->
+              <div class="feature-impact-row">
+                <div class="feature-info">
+                  <span>Membership Engagement</span>
+                  <span>Impact Weight</span>
+                </div>
+                <div class="feature-bar-bg">
+                  <div class="feature-bar-fill bar-positive" id="bar-active" style="width: 65%;"></div>
+                </div>
+              </div>
+
+              <!-- Feature 3: Age Demographic -->
+              <div class="feature-impact-row">
+                <div class="feature-info">
+                  <span>Age Demographic Sensitivity</span>
+                  <span>Impact Weight</span>
+                </div>
+                <div class="feature-bar-bg">
+                  <div class="feature-bar-fill bar-positive" id="bar-age" style="width: 30%;"></div>
+                </div>
+              </div>
+
+              <!-- Feature 4: Balance -->
+              <div class="feature-impact-row">
+                <div class="feature-info">
+                  <span>Balance to Product Ratio</span>
+                  <span>Impact Weight</span>
+                </div>
+                <div class="feature-bar-bg">
+                  <div class="feature-bar-fill bar-positive" id="bar-balance" style="width: 25%;"></div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. FEATURED PROJECTS SHOWCASE
+       ======================================================================== -->
+  <section class="section" id="projects">
+    <div class="container">
+
+      <div class="section-header">
+        <div class="section-badge">
+          <i class="ri-folder-code-line"></i> Portfolio Projects
+        </div>
+        <h2 class="section-title">Featured Engineering Works</h2>
+        <p class="section-subtitle">
+          Real-world Machine Learning applications, interactive Streamlit deployments, and deep exploratory data analysis.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="project-filter-tabs">
+        <button class="filter-tab-btn active" data-filter="all">All Projects</button>
+        <button class="filter-tab-btn" data-filter="deployed">Live Deployed Apps</button>
+        <button class="filter-tab-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-tab-btn" data-filter="eda">Data Analysis & EDA</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        
+        <!-- Project 1: Bank Customer Churn -->
+        <div class="project-card" data-category="deployed ml">
+          <div class="project-thumbnail">
+            <div class="project-overlay-badges">
+              <span class="badge-pill badge-live">
+                <span class="pulse-dot" style="width: 6px; height: 6px; background: #fff;"></span> Live App
+              </span>
+              <span class="badge-pill code-font" style="background: rgba(0,0,0,0.6); color: #fff;">ML Classification</span>
+            </div>
+            <div style="font-size: 4rem; color: var(--accent-cyan); opacity: 0.85;">
+              <i class="ri-bank-card-2-line"></i>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <div class="project-category">Predictive Intelligence • FinTech</div>
+            <h3 class="project-title">Bank Customer Churn Prediction</h3>
+            <p class="project-desc">
+              Developed a high-accuracy predictive ML model to identify customers at risk of churning by analyzing demographic, financial, and behavioral factors to empower financial institutions with proactive retention strategies.
+            </p>
+
+            <div class="project-metrics-row">
+              <div class="project-metric-item">Model: <span>XGBoost / Logistic</span></div>
+              <div class="project-metric-item">Accuracy: <span>86.5%</span></div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Matplotlib</span>
+            </div>
+
+            <div class="project-footer-links">
+              <a href="https://bank-customer-churn0.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn-card-link btn-card-primary">
+                <i class="ri-external-link-line"></i> Live Demo
+              </a>
+              <a href="https://github.com/islam0114/Bank_Customer_Churn/tree/main" target="_blank" rel="noopener noreferrer" class="btn-card-link">
+                <i class="ri-github-line"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Employee Attrition Prediction -->
+        <div class="project-card" data-category="deployed ml">
+          <div class="project-thumbnail">
+            <div class="project-overlay-badges">
+              <span class="badge-pill badge-live">
+                <span class="pulse-dot" style="width: 6px; height: 6px; background: #fff;"></span> Live App
+              </span>
+              <span class="badge-pill code-font" style="background: rgba(0,0,0,0.6); color: #fff;">HR Analytics</span>
+            </div>
+            <div style="font-size: 4rem; color: var(--accent-purple); opacity: 0.85;">
+              <i class="ri-user-unfollow-line"></i>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <div class="project-category">Predictive Modeling • HR Tech</div>
+            <h3 class="project-title">Employee Attrition Prediction</h3>
+            <p class="project-desc">
+              Constructed an end-to-end predictive system identifying employees at risk of leaving based on organizational, financial, and personal attributes. Integrated into a seamless interactive Streamlit web dashboard.
+            </p>
+
+            <div class="project-metrics-row">
+              <div class="project-metric-item">Pipeline: <span>Full Preprocessing</span></div>
+              <div class="project-metric-item">Metric: <span>ROC-AUC Optimized</span></div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">Seaborn</span>
+              <span class="tech-tag">Joblib</span>
+            </div>
+
+            <div class="project-footer-links">
+              <a href="https://employeeattrition-ojmrhbrmarcfkjqqxwrnoe.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn-card-link btn-card-primary">
+                <i class="ri-external-link-line"></i> Live Demo
+              </a>
+              <a href="https://github.com/islam0114/Employee_Attrition" target="_blank" rel="noopener noreferrer" class="btn-card-link">
+                <i class="ri-github-line"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Student Depression Prediction -->
+        <div class="project-card" data-category="deployed ml eda">
+          <div class="project-thumbnail">
+            <div class="project-overlay-badges">
+              <span class="badge-pill badge-live">
+                <span class="pulse-dot" style="width: 6px; height: 6px; background: #fff;"></span> Live App
+              </span>
+              <span class="badge-pill code-font" style="background: rgba(0,0,0,0.6); color: #fff;">Healthcare & Edu</span>
+            </div>
+            <div style="font-size: 4rem; color: var(--accent-emerald); opacity: 0.85;">
+              <i class="ri-mental-health-line"></i>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <div class="project-category">Healthcare AI • Behavioral Modeling</div>
+            <h3 class="project-title">Student Depression & Risk Predictor</h3>
+            <p class="project-desc">
+              Developed a machine learning model to identify university students at risk of depression using lifestyle, academic pressure, and psychological factors. Supports mental health intervention with data-driven insights and Power BI.
+            </p>
+
+            <div class="project-metrics-row">
+              <div class="project-metric-item">Integration: <span>Power BI & Streamlit</span></div>
+              <div class="project-metric-item">Focus: <span>Early Intervention</span></div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Scikit-learn</span>
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">Matplotlib</span>
+            </div>
+
+            <div class="project-footer-links">
+              <a href="https://student-depression-app.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn-card-link btn-card-primary">
+                <i class="ri-external-link-line"></i> Live Demo
+              </a>
+              <a href="https://github.com/islam0114/Student_Depression_Prediction" target="_blank" rel="noopener noreferrer" class="btn-card-link">
+                <i class="ri-github-line"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Ozone Pollution in California -->
+        <div class="project-card" data-category="eda ml">
+          <div class="project-thumbnail">
+            <div class="project-overlay-badges">
+              <span class="badge-pill badge-eda">
+                <i class="ri-bar-chart-2-line"></i> Big Data EDA
+              </span>
+              <span class="badge-pill code-font" style="background: rgba(0,0,0,0.6); color: #fff;">EPA Dataset</span>
+            </div>
+            <div style="font-size: 4rem; color: var(--accent-amber); opacity: 0.85;">
+              <i class="ri-temp-hot-line"></i>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <div class="project-category">Environmental Data Science • Spatial EDA</div>
+            <h3 class="project-title">California Ozone Pollution Analysis</h3>
+            <p class="project-desc">
+              Comprehensive exploratory data analysis on California air quality data from the U.S. EPA. Examined temporal and spatial trends in ozone levels, handled missing values, detected anomalies, and generated visualizations for environmental policy.
+            </p>
+
+            <div class="project-metrics-row">
+              <div class="project-metric-item">Source: <span>U.S. EPA</span></div>
+              <div class="project-metric-item">Scope: <span>Geospatial Analysis</span></div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">NumPy</span>
+              <span class="tech-tag">Seaborn</span>
+              <span class="tech-tag">Statistics</span>
+            </div>
+
+            <div class="project-footer-links">
+              <a href="https://github.com/islam0114/Ozone-Pollution-in-California" target="_blank" rel="noopener noreferrer" class="btn-card-link btn-card-primary" style="flex: 1;">
+                <i class="ri-github-line"></i> View Analysis & Repository
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. TECHNICAL SKILLS MATRIX
+       ======================================================================== -->
+  <section class="section" id="skills" style="background: rgba(13, 18, 31, 0.4);">
+    <div class="container">
+
+      <div class="section-header">
+        <div class="section-badge">
+          <i class="ri-tools-line"></i> Technical Proficiency
+        </div>
+        <h2 class="section-title">AI & Data Science Skill Matrix</h2>
+        <p class="section-subtitle">
+          Core toolkits, modern deep learning frameworks, and analytical ecosystems applied in production.
+        </p>
+      </div>
+
+      <div class="skills-matrix-grid">
+        
+        <!-- Category 1: AI & Deep Learning -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <i class="ri-brain-line"></i>
+            </div>
+            <div>
+              <h3>Deep Learning & AI</h3>
+              <p class="code-font" style="font-size: 0.8rem; color: var(--accent-cyan);">Neural Networks & NLP</p>
+            </div>
+          </div>
+
+          <div class="skill-bars-list">
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span>PyTorch & TensorFlow</span>
+                <span class="skill-percentage">90%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span>CNNs, RNNs & Transformers</span>
+                <span class="skill-percentage">88%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span>NLP, Embeddings & RAG</span>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-chips-cloud">
+            <span class="skill-chip"><i class="ri-check-line"></i> Computer Vision</span>
+            <span class="skill-chip"><i class="ri-check-line"></i> Hugging Face</span>
+            <span class="skill-chip"><i class="ri-check-line"></i> Model Optimization</span>
+          </div>
+        </div>
+
+        <!-- Category 2: Machine Learning -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="color: var(--accent-purple); background: rgba(121, 40, 202, 0.12);">
+              <i class="ri-bubble-chart-line"></i>
+            </div>
+            <div>
+              <h3>Machine Learning</h3>
+              <p class="code-font" style="font-size: 0.8rem; color: var(--accent-purple);">Predictive Modeling</p>
+            </div>
+          </div>
+
+          <div class="skill-bars-list">
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span>Scikit-Learn & XGBoost</span>
+                <span class="skill-percentage">95%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 95%; background: var(--grad-purple-pink);"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span>Regression & Classification</span>
+                <span class="skill-percentage">94%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 94%; background: var(--grad-purple-pink);"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span>Hyperparameter Tuning</span>
+                <span class="skill-percentage">90%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 90%; background: var(--grad-purple-pink);"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-chips-cloud">
+            <span class="skill-chip"><i class="ri-check-line"></i> Random Forest</span>
+            <span class="skill-chip"><i class="ri-check-line"></i> Ensembling</span>
+            <span class="skill-chip"><i class="ri-check-line"></i> Feature Engineering</span>
+          </div>
+        </div>
+
+        <!-- Category 3: Data Engineering & Analytics -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="color: var(--accent-emerald); background: rgba(16, 185, 129, 0.12);">
+              <i class="ri-database-2-line"></i>
+            </div>
+            <div>
+              <h3>Data & Analytics</h3>
+              <p class="code-font" style="font-size: 0.8rem; color: var(--accent-emerald);">Pipelines & Insights</p>
+            </div>
+          </div>
+
+          <div class="skill-bars-list">
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span>Pandas & NumPy</span>
+                <span class="skill-percentage">96%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 96%; background: linear-gradient(135deg, #10b981 0%, #059669 100%);"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span>SQL & Relational DBs</span>
+                <span class="skill-percentage">88%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 88%; background: linear-gradient(135deg, #10b981 0%, #059669 100%);"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span>Power BI & Visualization</span>
+                <span class="skill-percentage">90%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 90%; background: linear-gradient(135deg, #10b981 0%, #059669 100%);"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-chips-cloud">
+            <span class="skill-chip"><i class="ri-check-line"></i> Apache Spark</span>
+            <span class="skill-chip"><i class="ri-check-line"></i> Seaborn</span>
+            <span class="skill-chip"><i class="ri-check-line"></i> Statistical Modeling</span>
+          </div>
+        </div>
+
+        <!-- Category 4: Deployment & Workflow -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="color: var(--accent-amber); background: rgba(245, 158, 11, 0.12);">
+              <i class="ri-cloud-line"></i>
+            </div>
+            <div>
+              <h3>Deployment & Tools</h3>
+              <p class="code-font" style="font-size: 0.8rem; color: var(--accent-amber);">Production Ecosystem</p>
+            </div>
+          </div>
+
+          <div class="skill-bars-list">
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span>Streamlit App Deployment</span>
+                <span class="skill-percentage">95%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 95%; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span>Git, GitHub & Version Control</span>
+                <span class="skill-percentage">92%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 92%; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-labels">
+                <span>Jupyter & Colab Cloud</span>
+                <span class="skill-percentage">98%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" style="width: 98%; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-chips-cloud">
+            <span class="skill-chip"><i class="ri-check-line"></i> Linux / Bash</span>
+            <span class="skill-chip"><i class="ri-check-line"></i> FastAPI</span>
+            <span class="skill-chip"><i class="ri-check-line"></i> CI/CD Workflows</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. CERTIFICATIONS & HONORS SHOWCASE
+       ======================================================================== -->
+  <section class="section" id="certifications">
+    <div class="container">
+
+      <div class="section-header">
+        <div class="section-badge">
+          <i class="ri-medal-line"></i> Validated Credentials
+        </div>
+        <h2 class="section-title">Certifications & Honors</h2>
+        <p class="section-subtitle">
+          Distinguished accreditations and competitive recognition from top government and global tech authorities.
+        </p>
+      </div>
+
+      <div class="certifications-grid">
+        
+        <!-- Cert 1: IBM AI Engineer -->
+        <div class="cert-card">
+          <div class="cert-card-header">
+            <div class="cert-badge-icon">
+              <i class="ri-shield-star-line"></i>
+            </div>
+            <div class="cert-header-meta">
+              <h3>IBM AI Engineer Professional Certificate</h3>
+              <div class="cert-issuer">IBM Professional Specialization</div>
+            </div>
+          </div>
+
+          <div class="cert-honors-pill">
+            <i class="ri-checkbox-circle-fill"></i> Deep Learning & Apache Spark
+          </div>
+
+          <p class="cert-desc">
+            Mastered deep learning methodologies, CNNs for computer vision, RNNs for sequential processing, and production-grade pipeline engineering using PyTorch, TensorFlow, and Apache Spark.
+          </p>
+
+          <div class="cert-topics-list">
+            <span class="cert-topic-tag">PyTorch</span>
+            <span class="cert-topic-tag">TensorFlow</span>
+            <span class="cert-topic-tag">CNNs / RNNs</span>
+            <span class="cert-topic-tag">Apache Spark</span>
+          </div>
+
+          <a href="https://drive.google.com/drive/folders/1LjTuAZseVALCr83rohou7KMwOhubwg48?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-footer-link">
+            <span>View Verified Certificate</span>
+            <i class="ri-arrow-right-up-line"></i>
+          </a>
+        </div>
+
+        <!-- Cert 2: NTI Machine Learning Honors -->
+        <div class="cert-card">
+          <div class="cert-card-header">
+            <div class="cert-badge-icon" style="color: var(--accent-emerald); background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.3);">
+              <i class="ri-trophy-line"></i>
+            </div>
+            <div class="cert-header-meta">
+              <h3>NTI Machine Learning Training</h3>
+              <div class="cert-issuer">National Telecommunication Institute (NTI) & ITIDA</div>
+            </div>
+          </div>
+
+          <div class="cert-honors-pill" style="background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.4); color: var(--accent-emerald);">
+            <i class="ri-award-fill"></i> Top 20 Ranking • 100% Evaluation Score
+          </div>
+
+          <p class="cert-desc">
+            Intensive 120-hour Machine Learning program. Achieved a perfect 100% score ranking in the Top 20 trainees across the national cohort. Covered advanced algorithms, real-world data pipelines, and technical freelancing.
+          </p>
+
+          <div class="cert-topics-list">
+            <span class="cert-topic-tag">100% Score</span>
+            <span class="cert-topic-tag">Top 20 Ranking</span>
+            <span class="cert-topic-tag">120 Hours</span>
+            <span class="cert-topic-tag">Advanced ML</span>
+          </div>
+
+          <a href="https://drive.google.com/drive/folders/1LjTuAZseVALCr83rohou7KMwOhubwg48?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-footer-link">
+            <span>View Certificate & Ranking</span>
+            <i class="ri-arrow-right-up-line"></i>
+          </a>
+        </div>
+
+        <!-- Cert 3: DEPI - Data Science Specialization -->
+        <div class="cert-card">
+          <div class="cert-card-header">
+            <div class="cert-badge-icon" style="color: var(--accent-cyan); background: rgba(0, 242, 254, 0.15); border-color: rgba(0, 242, 254, 0.3);">
+              <i class="ri-government-line"></i>
+            </div>
+            <div class="cert-header-meta">
+              <h3>Digital Egypt Pioneers Program (DEPI)</h3>
+              <div class="cert-issuer">Ministry of Communications & Information Technology (MCIT)</div>
+            </div>
+          </div>
+
+          <div class="cert-honors-pill" style="background: rgba(0, 242, 254, 0.15); border-color: rgba(0, 242, 254, 0.4); color: var(--accent-cyan);">
+            <i class="ri-checkbox-circle-fill"></i> AI & Data Science Specialist
+          </div>
+
+          <p class="cert-desc">
+            Completed an intensive, selective multi-month specialization delivered in partnership with CLS Learning Solutions and 365 Leading Training. Developed advanced capabilities in predictive analytics and statistical data infrastructure.
+          </p>
+
+          <div class="cert-topics-list">
+            <span class="cert-topic-tag">MCIT Egypt</span>
+            <span class="cert-topic-tag">Predictive Modeling</span>
+            <span class="cert-topic-tag">Data Infrastructure</span>
+          </div>
+
+          <a href="https://drive.google.com/drive/folders/1LjTuAZseVALCr83rohou7KMwOhubwg48?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-footer-link">
+            <span>View DEPI Credential</span>
+            <i class="ri-arrow-right-up-line"></i>
+          </a>
+        </div>
+
+        <!-- Cert 4: ITI AI Professional Program -->
+        <div class="cert-card">
+          <div class="cert-card-header">
+            <div class="cert-badge-icon" style="color: var(--accent-magenta); background: rgba(255, 0, 128, 0.15); border-color: rgba(255, 0, 128, 0.3);">
+              <i class="ri-macbook-line"></i>
+            </div>
+            <div class="cert-header-meta">
+              <h3>ITI AI Professional Program</h3>
+              <div class="cert-issuer">Information Technology Institute (ITI)</div>
+            </div>
+          </div>
+
+          <div class="cert-honors-pill">
+            <i class="ri-checkbox-circle-fill"></i> 90 Hours Math, Stats & Deep Learning
+          </div>
+
+          <p class="cert-desc">
+            Rigorous mathematical foundation covering Probability, Statistics, Linear Algebra, and Numerical Optimization tailored for Data Science, alongside Neural Network architecture design and practical capstone projects.
+          </p>
+
+          <div class="cert-topics-list">
+            <span class="cert-topic-tag">Applied Math</span>
+            <span class="cert-topic-tag">Linear Algebra</span>
+            <span class="cert-topic-tag">Optimization</span>
+            <span class="cert-topic-tag">Neural Nets</span>
+          </div>
+
+          <a href="https://drive.google.com/drive/folders/1LjTuAZseVALCr83rohou7KMwOhubwg48?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-footer-link">
+            <span>View ITI Certificate</span>
+            <i class="ri-arrow-right-up-line"></i>
+          </a>
+        </div>
+
+        <!-- Cert 5: Sprints x Microsoft AI Camp -->
+        <div class="cert-card">
+          <div class="cert-card-header">
+            <div class="cert-badge-icon" style="color: var(--accent-blue); background: rgba(79, 172, 254, 0.15); border-color: rgba(79, 172, 254, 0.3);">
+              <i class="ri-microsoft-line"></i>
+            </div>
+            <div class="cert-header-meta">
+              <h3>Sprints x Microsoft Summer Camp</h3>
+              <div class="cert-issuer">Microsoft & Sprints</div>
+            </div>
+          </div>
+
+          <div class="cert-honors-pill">
+            <i class="ri-checkbox-circle-fill"></i> 40 Hours Applied AI Pipelines
+          </div>
+
+          <p class="cert-desc">
+            Hands-on training in designing, training, and evaluating machine learning pipelines using industry-standard environments and Microsoft engineering best practices.
+          </p>
+
+          <div class="cert-topics-list">
+            <span class="cert-topic-tag">Microsoft AI</span>
+            <span class="cert-topic-tag">ML Pipelines</span>
+            <span class="cert-topic-tag">Data Preprocessing</span>
+          </div>
+
+          <a href="https://drive.google.com/drive/folders/1LjTuAZseVALCr83rohou7KMwOhubwg48?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-footer-link">
+            <span>View Microsoft Credential</span>
+            <i class="ri-arrow-right-up-line"></i>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       9. RESUME DOWNLOAD BANNER
+       ======================================================================== -->
+  <section class="section" style="padding: 2rem 0;">
+    <div class="container">
+      <div class="resume-banner">
+        <div class="resume-content">
+          <div class="resume-icon-orbit">
+            <i class="ri-file-user-line"></i>
+          </div>
+          <h2>Looking for a Detailed Overview?</h2>
+          <p>
+            Download my comprehensive resume for an in-depth breakdown of my technical projects, core AI algorithms, educational pedigree, and verified professional experience.
+          </p>
+          <div class="resume-actions-group">
+            <a href="https://drive.google.com/file/d/1Du3rAKoVmyppXj9nJUisE3xe9Fi5dpzV/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn-primary">
+              <i class="ri-download-cloud-2-line"></i> Download CV (PDF)
+            </a>
+            <a href="https://drive.google.com/drive/folders/1LjTuAZseVALCr83rohou7KMwOhubwg48?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              <i class="ri-folder-shared-line"></i> Google Drive Certificates Folder
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       10. CONTACT & DIRECT CONNECT HUB
+       ======================================================================== -->
+  <section class="section" id="contact">
+    <div class="container">
+
+      <div class="section-header">
+        <div class="section-badge">
+          <i class="ri-send-plane-line"></i> Let's Collaborate
+        </div>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">
+          Whether you're looking to hire an AI Engineer, discuss a predictive modeling project, or build intelligent systems, I'm ready to connect!
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Left: Quick Direct Channels -->
+        <div class="contact-info-cards">
+          
+          <!-- Email Card -->
+          <div class="contact-card">
+            <div class="contact-card-icon">
+              <i class="ri-mail-line"></i>
+            </div>
+            <div class="contact-card-text">
+              <h4>Email Me</h4>
+              <p>10islammohamed01@gmail.com</p>
+            </div>
+            <button class="copy-badge-btn btn-copy-email" title="Copy Email">
+              <i class="ri-file-copy-line"></i> Copy
+            </button>
+          </div>
+
+          <!-- WhatsApp Card -->
+          <a href="https://wa.me/201144682583" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-card-icon" style="color: var(--accent-emerald); background: rgba(16, 185, 129, 0.12);">
+              <i class="ri-whatsapp-line"></i>
+            </div>
+            <div class="contact-card-text">
+              <h4>WhatsApp & Direct Phone</h4>
+              <p>+20 114 468 2583</p>
+            </div>
+            <span class="copy-badge-btn" style="color: var(--accent-emerald);">
+              <i class="ri-chat-3-line"></i> Chat
+            </span>
+          </a>
+
+          <!-- LinkedIn Card -->
+          <a href="https://www.linkedin.com/in/islam01144" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-card-icon" style="color: #0077b5; background: rgba(0, 119, 181, 0.12);">
+              <i class="ri-linkedin-fill"></i>
+            </div>
+            <div class="contact-card-text">
+              <h4>LinkedIn Profile</h4>
+              <p>linkedin.com/in/islam01144</p>
+            </div>
+            <span class="copy-badge-btn">
+              <i class="ri-external-link-line"></i>
+            </span>
+          </a>
+
+          <!-- GitHub Card -->
+          <a href="https://github.com/islam0114" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-card-icon" style="color: var(--text-primary); background: rgba(255, 255, 255, 0.1);">
+              <i class="ri-github-fill"></i>
+            </div>
+            <div class="contact-card-text">
+              <h4>GitHub Repositories</h4>
+              <p>github.com/islam0114</p>
+            </div>
+            <span class="copy-badge-btn">
+              <i class="ri-external-link-line"></i>
+            </span>
+          </a>
+
+        </div>
+
+        <!-- Right: Interactive Message Form -->
+        <div class="contact-form-box">
+          <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Send a Message</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+            Fill out the form below to reach out directly. I aim to respond within 24 hours.
+          </p>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="e.g. Alex Johnson" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-email">Your Email</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="e.g. alex@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" class="form-control" placeholder="e.g. AI Engineering Role / Project Collaboration">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Message</label>
+              <textarea id="contact-message" class="form-control" rows="4" placeholder="Tell me about your project, role, or inquiry..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              <i class="ri-send-plane-2-line"></i> Send Message Directly
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       11. FOOTER
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>Islam Mohamed</h3>
+          <p>AI Engineer & Data Scientist • Transforming data into intelligent systems.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="https://github.com/islam0114" target="_blank" rel="noopener noreferrer" class="social-icon-btn">
+            <i class="ri-github-fill"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/islam01144" target="_blank" rel="noopener noreferrer" class="social-icon-btn">
+            <i class="ri-linkedin-fill"></i>
+          </a>
+          <a href="https://wa.me/201144682583" target="_blank" rel="noopener noreferrer" class="social-icon-btn">
+            <i class="ri-whatsapp-line"></i>
+          </a>
+          <a href="https://www.facebook.com/share/1BB7BYF1yA/" target="_blank" rel="noopener noreferrer" class="social-icon-btn">
+            <i class="ri-facebook-fill"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Islam Mohamed. All Rights Reserved.
+        </div>
+        <div class="code-font" style="font-size: 0.8rem;">
+          Engineered with HTML5, Vanilla CSS & Modern JavaScript
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top-btn" id="back-to-top-btn" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <!-- Toast Notification System -->
+  <div class="toast-notification" id="toast-notification">
+    <i class="ri-checkbox-circle-fill toast-icon"></i>
+    <span id="toast-message">Notification message</span>
+  </div>
+
+  <!-- Core Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/ai-demo.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
